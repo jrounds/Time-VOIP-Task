@@ -49,7 +49,7 @@ paired.semi.call.summary.mr<-rhex(z)
 #rhsave(paired.semi.call.summary.mr,paired.semi.call.summary.mr.time,file="/voip/records/paired.semi.call.summary.mr.RData")
 
 paired.semi.call.summary.rhread.time<-system.time(
-summary <- rhread("/wsc/jrounds/tmp/voip/summary/",doloc=F)
+summary <- rhread("/wsc/jrounds/tmp/voip/summary")
 )
 
 paired.semi.call.summary.rmodify.time<-system.time({

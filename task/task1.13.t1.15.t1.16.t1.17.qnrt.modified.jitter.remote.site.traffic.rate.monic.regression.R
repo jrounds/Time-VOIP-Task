@@ -1,6 +1,8 @@
-library(lattice)
+
 library(Rhipe)
 options(digits=18)
+rhinit()
+rhoptions(runner=sprintf("%s/rhipe.runner.sh",Sys.getenv("HOME")))8)
 
 ###############################################################################
 #Perform polynomial regression on near-replicate subsets generated in modified.jitter.remote.site.traffic.rate.subset.R.

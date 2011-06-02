@@ -4,7 +4,7 @@ rhinit()
 rhoptions(runner=sprintf("%s/rhipe.runner.sh",Sys.getenv("HOME")))
 
 m<-expression({
-  X9<-diag(rep(1,9)) 
+  I = diag(rep(1,9)) 
   mywt.bisquare <- function(u, c = 6){
     U <- abs(u/c)
     w <- ((1 + U) * (1 - U))^2
